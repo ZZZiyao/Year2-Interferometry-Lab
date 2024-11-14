@@ -14,3 +14,5 @@ quick_plot.py: Utility for visualizing interferograms from experimental data fil
 RGB_analysis.py: My extention work to investigate the LED RGB values.
 
 For more information, please check my [report](https://github.com/ZZZiyao/Year2-Interferometry-Lab/blob/main/Interferometry_Report.pdf).
+
+This repository is intended for academic and personal use only. Please contact the author (me) before using any part of these documents in your own work.
