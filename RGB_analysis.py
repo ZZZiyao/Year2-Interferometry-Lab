@@ -21,6 +21,7 @@ plt.xlabel('wavelength (nm)')
 plt.ylabel('intensity(a.u.)')
 #plt.title('White LED spectrum after flattening')
 
+#plot XYZ color scale
 xxx=[]
 yyy=[]
 zzz=[]
@@ -38,6 +39,7 @@ plt.plot(lambda1,yyy/max(zzz),color='green',label='Y(λ)')
 plt.plot(lambda1,zzz/max(zzz),color='dodgerblue',label='Z(λ)')
 plt.legend()
 
+#Normalization i.e. Curves should integrate to 1
 from scipy.integrate import trapz,simps
 integral_trapz = trapz(xxx/max(zzz),lambda1)
 print("Integral using Trapezoidal Rule:", integral_trapz)
@@ -47,6 +49,8 @@ print("Integral using Trapezoidal Rule:", integral_trapz2)
 from scipy.integrate import trapz
 integral_trapz3 = trapz(zzz/max(zzz),lambda1)
 print("Integral using Trapezoidal Rule:", integral_trapz3)
+
+#Calculate RGB values
 #%%
 # 91.21,82.71,81.08
 # 57.87,52.47,51.44
